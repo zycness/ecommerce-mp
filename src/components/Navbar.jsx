@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <header>
       <nav>
-        <ul className='flex space-x-6 text-lg font-bold underline'>
+        <ul className='flex justify-center space-x-6 text-lg font-bold underline'>
           <li>
             <Link to={"/"}>Home</Link>
           </li>
@@ -15,10 +15,18 @@ const Navbar = () => {
           <li>
             <Link to={"/cart"}>Carrito</Link>
           </li>
+          <li>
+            <div>
+              <Link to={"/login"}>Login</Link>
+            </div>
+            <div>
+              <Link to={"/register"}>Register</Link>
+            </div>
+          </li>
         </ul>
       </nav>
     </header>
-  ); 
+  );
 };
 
 export default Navbar;
